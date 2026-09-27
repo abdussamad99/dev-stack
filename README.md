@@ -3,7 +3,7 @@
 A modern web app to explore and build your ideal development stack. Browse curated technologies, compare them side by side, and save your favorites.
 
 
-![DevStack Preview](../dev-stack/src/assets/screenshort.png)
+![DevStack Preview](./src/assets/screenshort.png)
 
 # Features
 
@@ -28,9 +28,10 @@ JSON
 
 
 
+## 🔗 Live Demo
 
-Abdus Samad**
-- GitHub: [@abdussamad99](https://github.com/abdussamad99)
+- GitHub Repo :[@abdussamad99](https://github.com/abdussamad99)
+- Versel Live Demo link : https://dev-stack-rho-seven.vercel.app/ 
 
 
 

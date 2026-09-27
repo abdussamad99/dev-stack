@@ -136,7 +136,7 @@ const Footer = () => {
 
         <div className="border-t border-gray-100 mt-10 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-gray-500">
-            ©Dev Stack. All rights reserved.
+            ©2026 Dev Stack. All rights reserved.
           </p>
           <div className="flex gap-6">
             <a
