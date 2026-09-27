@@ -1,4 +1,5 @@
 import type { Technology } from "../types";
+import { RxCross1 } from "react-icons/rx";
 
 interface SidebarProps {
   saved: Technology[];
@@ -8,8 +9,8 @@ interface SidebarProps {
 
 const Sidebar = ({ saved, onRemove, onClearAll }: SidebarProps) => {
   return (
-    <aside className="w-full">
-      <div className="flex flex-col gap-4 p-4 bg-surface rounded-lg">
+    <aside>
+      <div className="flex flex-col gap-4 p-4 bg-surface rounded-lg sticky top-20">
         <div className="flex items-start justify-between">
           <div>
             <h2 className="text-lg font-semibold text-gray-800">
@@ -54,7 +55,7 @@ const Sidebar = ({ saved, onRemove, onClearAll }: SidebarProps) => {
                     {tech.name}
                   </strong>
                   <span className="block text-sm text-gray-500 truncate">
-                    {tech.description}
+                    {tech.category}
                   </span>
                 </div>
                 <button
@@ -63,7 +64,7 @@ const Sidebar = ({ saved, onRemove, onClearAll }: SidebarProps) => {
                   className="ml-auto text-sm font-medium text-red-500 hover:text-red-700"
                   onClick={() => onRemove(tech)}
                 >
-                  Remove
+                  <RxCross1 />
                 </button>
               </div>
             ))}
@@ -73,10 +74,10 @@ const Sidebar = ({ saved, onRemove, onClearAll }: SidebarProps) => {
         <button
           type="button"
           disabled={saved.length === 0}
-          className="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="bg-[#ffffffFF] text-red-500 px-4 py-2 border-2 border-[#ed8c85FF] rounded-2xl hover:bg-cyan-50 disabled:opacity-50 cursor-pointer disabled:cursor-not-allowed"
           onClick={onClearAll}
         >
-          Clear All
+          Remove All
         </button>
       </div>
     </aside>

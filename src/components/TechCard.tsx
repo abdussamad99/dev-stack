@@ -1,4 +1,5 @@
 import type { Technology } from "../types";
+import { FcRating } from "react-icons/fc";
 
 interface TechCardProps {
   tech: Technology;
@@ -8,7 +9,7 @@ interface TechCardProps {
 
 const TechCard = ({ tech, isSaved, onSave }: TechCardProps) => {
   return (
-    <div className="bg-white shadow-md rounded-lg p-4 hover:shadow-lg transition-shadow duration-300 border border-gray-100">
+    <div className="bg-white shadow-md rounded-lg p-4 hover:shadow-lg transition-shadow duration-300 border border-gray-100 w-full">
       <div className="flex justify-between items-center">
 
         <img src={tech.icon} alt={tech.name} className="w-16 h-16" />
@@ -17,15 +18,19 @@ const TechCard = ({ tech, isSaved, onSave }: TechCardProps) => {
       <h1>{tech.name}</h1>
       <p className="text-gray-600">{tech.description}</p>
       <br />
-      <p className="text-gray-500">Category: {tech.category}</p>
-      <p>{tech.difficulty}</p>
-      <p>{tech.rating}</p>
+      <div className="flex justify-between text-[13px] gap-0.5">
+        <p className="text-gray-500"> {tech.category}</p>
+        <p>{tech.difficulty}</p>
+        <span className=" flex items-center">
+          <FcRating /> {tech.rating}
+        </span>
+      </div>
       <div>
         <button
           type="button"
           disabled={isSaved}
           onClick={() => onSave(tech)}
-          className="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full bg-[#0A0F1D] text-white py-2.5 rounded-md hover:bg-gray-800 mt-4 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
         >
           {isSaved ? "Saved ✓" : "Add to Stack"}
         </button>
