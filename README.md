@@ -28,10 +28,10 @@ JSON
 
 
 
-## 🔗 Live Demo
+##  Live Demo
 
 - GitHub Repo :[@abdussamad99](https://github.com/abdussamad99)
-- Versel Live Demo link : https://dev-stack-rho-seven.vercel.app/ 
+- Versel Live Demo link : https://dev-stack-rho-seven.vercel.app/
 
 
 
