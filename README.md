@@ -1,32 +1,55 @@
-# React + TypeScript + Vite
+# DevStack — Technology Stack Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A modern web app to explore and build your ideal development stack. Browse curated technologies, compare them side by side, and save your favorites.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+![DevStack Preview](../dev-stack/src/assets/screenshort.png)
 
-## React Compiler
+# Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-  Browse 12+ curated technologies (React, Vue, Node.js, PostgreSQL, and more)
+-  Filter-friendly badges (Popular, Trending, Essential, Enterprise)
+-  Ratings & difficulty levels
+-
+-  Toast notifications via react-toastify
+- Fully responsive — mobile, tablet, desktop
+- Browse development technologies
+- Build a personalized technology stack
+- Add and remove technologies dynamically
 
-## Expanding the Oxlint configuration
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+#  Technologies Used
+React
+TypeScript
+Vite
+Tailwind CSS
+React Toastify
+JSON
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+
+
+Abdus Samad**
+- GitHub: [@abdussamad99](https://github.com/abdussamad99)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
