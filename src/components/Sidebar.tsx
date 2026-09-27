@@ -13,12 +13,10 @@ const Sidebar = ({ saved, onRemove, onClearAll }: SidebarProps) => {
       <div className="flex flex-col gap-4 p-4 bg-surface rounded-lg sticky top-20">
         <div className="flex items-start justify-between">
           <div>
-            <h2 className="text-lg font-semibold text-gray-800">
-              Saved Technologies
-            </h2>
-            <p className="mt-1 text-sm text-gray-500">
-              Your saved technologies appear here.
-            </p>
+           <h2 className="text-base font-bold text-gray-900">Your Stack</h2>
+         <p className="text-xs text-gray-500 mt-1 mb-5">
+       {saved.length} Technology Selected
+          </p>
           </div>
           <span className="grid h-8 w-8 place-items-center rounded-full bg-accent font-bold">
             {saved.length}
@@ -27,14 +25,12 @@ const Sidebar = ({ saved, onRemove, onClearAll }: SidebarProps) => {
 
         {saved.length === 0 ? (
           <div className="py-16 text-center">
-            <div className="mx-auto grid h-12 w-12 place-items-center rounded-full bg-amber-100 border-dashed">
-              +
-            </div>
+
             <p className="mt-2 text-sm text-gray-500">
-              No technologies saved yet.
+             No technologies Selected Yet.
             </p>
-            <p className="text-sm text-gray-400">
-              Click "Learn More" on a card to save it here.
+            <p className="text-sm text-gray-400 border-2 border-gray-200 border-dashed rounded-xl py-10 px-4 text-center ">
+              Your stack is empty.
             </p>
           </div>
         ) : (

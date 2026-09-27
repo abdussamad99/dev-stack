@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import MainLayout from "./components/MainLayout";
 import type { Technology } from "./types";
+import Footer from "./components/Footer";
 
 const dataFetch = async (): Promise<Technology[]> => {
   const res = await fetch("/data.json");
@@ -59,6 +60,7 @@ function App() {
         />
       </Suspense>
       <ToastContainer position="top-center" />
+      <Footer/>
     </>
   );
 }
